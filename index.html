@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
+    <script
+      src="https://kit.fontawesome.com/ecf551110a.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,12 +35,62 @@
     </style>
   </head>
   <body>
-    <header class="bg-[#FFFBF0] min-h-screen flex items-center">
-      <!-- banner -->
+    <header class="bg-[#FFFBF0]">
       <div class="my-container">
+        <!-- nav starts  -->
+        <nav class="py-8">
+          <div class="nav-contents flex justify-between items-center">
+            <!--  -->
+            <div class="nav-logo w-6/12 lg:w-1/4 cursor-pointer">
+              <img class="" src="icons/logo.png" alt="" />
+            </div>
+            <!--  -->
+            <!-- ham -->
+            <div class="ham">
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </div>
+            <!-- ham ends  -->
+            <div class="nav-menu lg:block hidden">
+              <ul class="flex">
+                <li>
+                  <a
+                    class="font-roboto font-medium capitalize text-[#3C3C3C] ml-10 hover:text-[#A4BC46] transition-all duration-300"
+                    href="#"
+                    >home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-roboto font-medium capitalize text-[#3C3C3C] ml-10 hover:text-[#A4BC46] transition-all duration-300"
+                    href="#"
+                    >product</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-roboto font-medium capitalize text-[#3C3C3C] ml-10 hover:text-[#A4BC46] transition-all duration-300"
+                    href="#"
+                    >about us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-roboto font-medium capitalize text-[#3C3C3C] ml-10 hover:text-[#A4BC46] transition-all duration-300"
+                    href="#"
+                    >contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--  -->
+          </div>
+        </nav>
+        <!-- nav ends -->
+        <!-- banner -->
+
         <!-- ** parent ** -->
         <div
-          class="banner-content flex gap-5 justify-between flex-col lg:flex-row items-center px-5"
+          class="banner-content min-h-full py-14 flex gap-5 justify-between flex-col lg:flex-row items-center px-5"
         >
           <!-- content part -->
           <div class="banner-content">
