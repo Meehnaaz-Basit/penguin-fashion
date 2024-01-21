@@ -4,11 +4,249 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+      .my-container {
+        width: 85%;
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+    </style>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="bg-[#FFFBF0] min-h-screen flex items-center">
+      <!-- banner -->
+      <div class="my-container">
+        <!-- ** parent ** -->
+        <div
+          class="banner-content flex gap-5 justify-between flex-col lg:flex-row items-center px-5"
+        >
+          <!-- content part -->
+          <div class="banner-content">
+            <h1 class="font-bebas text-5xl lg:text-7xl text-[#FABE4C]">
+              be the penguins <br />
+              <span class="text-[#363958]"> of winter</span>
+            </h1>
+            <p class="font-roboto text-base w-96 pr-8 leading-7 my-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button
+              class="px-7 py-4 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center text-white uppercase font-roboto font-medium"
+            >
+              <img class="w-7 mr-2" src="icons/shopping-cart 1.png" alt="" />
+              buy now
+            </button>
+          </div>
+          <!-- content part ends -->
+          <!-- image part -->
+          <div class="banner-image lg:pr-16">
+            <img src="images/model.png" alt="" />
+          </div>
+          <!-- image part ends -->
+        </div>
+      </div>
+      <!-- banner ends -->
+    </header>
+    <main>
+      <!-- woman jacket -->
+      <section class="py-14">
+        <div class="my-container">
+          <h2 class="font-bebas text-5xl text-[#363958] my-5">woman jacket</h2>
+          <div
+            class="woman-cards font-roboto grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10"
+          >
+            <!-- 1 -->
+            <div class="card-items space-y-3 rounded-2xl p-6 shadow-xl">
+              <div class="bg-[#f1f1f1] rounded-2xl px-10 py-5">
+                <img src="images/jacket-1.png" alt="" />
+              </div>
+              <h4 class="text-2xl text-[#363958] capitalize font-bold">
+                yellow coat jacket
+              </h4>
+              <p class="text-[#3e3e3e]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <h2 class="text-4xl text-[#fabe4c] font-black">$234</h2>
+                <button
+                  class="px-7 py-4 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center text-white uppercase font-roboto font-medium"
+                >
+                  <img
+                    class="w-7 mr-2"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />
+                  buy now
+                </button>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card-items space-y-3 rounded-2xl p-5 shadow-xl">
+              <div class="bg-[#f1f1f1] rounded-2xl px-10 py-5">
+                <img src="images/jacket-2.png" alt="" />
+              </div>
+              <h4 class="text-2xl text-[#363958] capitalize font-bold">
+                ladies jacket
+              </h4>
+              <p class="text-[#3e3e3e]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <h2 class="text-4xl text-[#fabe4c] font-black">$234</h2>
+                <button
+                  class="px-7 py-4 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center text-white uppercase font-roboto font-medium"
+                >
+                  <img
+                    class="w-7 mr-2"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />
+                  buy now
+                </button>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card-items space-y-3 rounded-2xl p-5 shadow-xl">
+              <div class="bg-[#f1f1f1] rounded-2xl px-10 py-5">
+                <img src="images/jacket-3.png" alt="" />
+              </div>
+              <h4 class="text-2xl text-[#363958] capitalize font-bold">
+                woman leather jacket
+              </h4>
+              <p class="text-[#3e3e3e]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <h2 class="text-4xl text-[#fabe4c] font-black">$234</h2>
+                <button
+                  class="px-7 py-4 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center text-white uppercase font-roboto font-medium"
+                >
+                  <img
+                    class="w-7 mr-2"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />
+                  buy now
+                </button>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!-- woman jacket ends-->
+      <!-- man jacket -->
+      <section class="py-14">
+        <div class="my-container">
+          <h2 class="font-bebas text-5xl text-[#363958] my-5">man jacket</h2>
+          <div
+            class="woman-cards font-roboto grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10"
+          >
+            <!-- 1 -->
+            <div class="card-items space-y-3 rounded-2xl p-6 shadow-xl">
+              <div class="bg-[#f1f1f1] rounded-2xl px-10 py-5">
+                <img src="images/jacket-4.png" alt="" />
+              </div>
+              <h4 class="text-2xl text-[#363958] capitalize font-bold">
+                snowboard jacket mens
+              </h4>
+              <p class="text-[#3e3e3e]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <h2 class="text-4xl text-[#fabe4c] font-black">$234</h2>
+                <button
+                  class="px-7 py-4 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center text-white uppercase font-roboto font-medium"
+                >
+                  <img
+                    class="w-7 mr-2"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />
+                  buy now
+                </button>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="card-items space-y-3 rounded-2xl p-5 shadow-xl">
+              <div class="bg-[#f1f1f1] rounded-2xl px-10 py-5">
+                <img src="images/jacket-5.png" alt="" />
+              </div>
+              <h4 class="text-2xl text-[#363958] capitalize font-bold">
+                man leather jackets
+              </h4>
+              <p class="text-[#3e3e3e]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <h2 class="text-4xl text-[#fabe4c] font-black">$234</h2>
+                <button
+                  class="px-7 py-4 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center text-white uppercase font-roboto font-medium"
+                >
+                  <img
+                    class="w-7 mr-2"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />
+                  buy now
+                </button>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="card-items space-y-3 rounded-2xl p-5 shadow-xl">
+              <div class="bg-[#f1f1f1] rounded-2xl px-10 py-5">
+                <img src="images/jacket-6.png" alt="" />
+              </div>
+              <h4 class="text-2xl text-[#363958] capitalize font-bold">
+                man casual jacket
+              </h4>
+              <p class="text-[#3e3e3e]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <h2 class="text-4xl text-[#fabe4c] font-black">$234</h2>
+                <button
+                  class="px-7 py-4 rounded-xl bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center text-white uppercase font-roboto font-medium"
+                >
+                  <img
+                    class="w-7 mr-2"
+                    src="icons/shopping-cart 1.png"
+                    alt=""
+                  />
+                  buy now
+                </button>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!-- man jacket ends-->
+    </main>
     <footer></footer>
   </body>
 </html>
